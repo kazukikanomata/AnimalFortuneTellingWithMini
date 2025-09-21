@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top" />
+    <title>アンケート</title>
+    <script src="chatgpt.js"></script>
+  </head>
+  <body>
+    <form id="myForm">
+      <label for="nick-name">ニックネーム:</label>
+      <input type="text" name="nick-name" id="nick-name" required />
+      <div class="question-group">
+        <h2>休日に自由な時間ができたら、どんな過ごし方が一番好き？</h2>
+        <label
+          ><input
+            type="radio"
+            name="q1"
+            value="A1"
+          />久しぶりにいろんな人に会ってワイワイしたい</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="q1"
+            value="B1"
+          />気心の知れた数人と、じっくり話したい</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="q1"
+            value="C1"
+          />みんなで何かを一緒に作ったり、体験したい</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="q1"
+            value="D1"
+          />ひとりで好きなことをしてリフレッシュしたい</label
+        >
+      </div>
+
+      <div class="question-group">
+        <h2>自分が落ち込んでいるとき、どうしますか？</h2>
+        <label
+          ><input
+            type="radio"
+            name="q2"
+            value="A2"
+          />とことん落ち込んで、自然と浮上するのを待つ</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="q2"
+            value="B2"
+          />誰かに話してスッキリしたい</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="q2"
+            value="C2"
+          />原因を冷静に分析して対処する</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="q2"
+            value="D2"
+          />美味しいもの食べて寝る</label
+        >
+      </div>
+
+      <div class="question-group">
+        <h2>みんなで旅行に行きます。あなたがやる行動は？</h2>
+        <label
+          ><input
+            type="radio"
+            name="q3"
+            value="A3"
+          />みんなの希望を聞いて、空気を読みながら決める</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="q3"
+            value="B3"
+          />「じゃあここにしよう！」と率先してまとめる</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="q3"
+            value="C3"
+          />行き先やお店を調べまくって、さりげなく提案する</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="q3"
+            value="D3"
+          />とにかく行きたいところを主張する</label
+        >
+      </div>
+
+      <div class="question-group">
+        <h2>無人島に漂流しました。あなたの第一声と行動は？ *</h2>
+        <label
+          ><input
+            type="radio"
+            name="q4"
+            value="A4"
+          />「まずは水と食料…生き延びる計画立てねば」</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="q4"
+            value="B4"
+          />「うわ〜やば！でもまあなんとかなるっしょ」</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="q4"
+            value="C4"
+          />「やばっ…でもこの島めっちゃ冒険できそうじゃん？」</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="q4"
+            value="D4"
+          />「とりあえず使えそうなもん拾って、なんとかするか〜」</label
+        >
+      </div>
+
+      <div class="question-group">
+        <h2>夢が叶う魔法がひとつあったら？</h2>
+        <label
+          ><input
+            type="radio"
+            name="q5"
+            value="A5"
+          />みんなの心が通じるようになる魔法</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="q5"
+            value="B5"
+          />どこでも好きな場所に行けるワープ魔法</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="q5"
+            value="C5"
+          />知識とアイデアが無限にわいてくる魔法</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="q5"
+            value="D5"
+          />自分の国をつくれる魔法</label
+        >
+      </div>
+
+      <div class="question-group">
+        <h2>もし突然、大舞台に立つことになったら？</h2>
+        <label
+          ><input
+            type="radio"
+            name="q6"
+            value="A6"
+          />全力で準備して、やるしかない！</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="q6"
+            value="B6"
+          />こっそり応援に回りたいな…</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="q6"
+            value="C6"
+          />場を盛り上げるの、案外得意かも？</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="q6"
+            value="D6"
+          />できれば逃げたい（笑）</label
+        >
+      </div>
+
+      <div class="question-group">
+        <h2>プレゼントを選ぶとき、あなたは？</h2>
+        <label
+          ><input
+            type="radio"
+            name="q7"
+            value="A7"
+          />相手の反応を想像して悩みまくる</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="q7"
+            value="B7"
+          />自分なら嬉しいなって思うものを贈る</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="q7"
+            value="C7"
+          />センスと個性重視で選ぶ</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="q7"
+            value="D7"
+          />とにかく喜んでほしくて張り切る！</label
+        >
+      </div>
+
+      <div class="question-group">
+        <h2>あなたにとって「リーダー」ってどんな人？</h2>
+        <label
+          ><input
+            type="radio"
+            name="q8"
+            value="A8"
+          />情熱があって頼れる人</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="q8"
+            value="B8"
+          />黙って支えてくれる人</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="q8"
+            value="C8"
+          />いろんな人の個性を活かせる人</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="q8"
+            value="D8"
+          />そもそもリーダーって必要かな？</label
+        >
+      </div>
+
+      <div class="question-group">
+        <h2>あなたの中にある「ゆずれないもの」は？</h2>
+        <label><input type="radio" name="q9" value="A9" />自分の自由時間</label>
+        <label
+          ><input
+            type="radio"
+            name="q9"
+            value="B9"
+          />チームの空気や信頼感</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="q9"
+            value="C9"
+          />「おもしろそう！」という直感</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="q9"
+            value="D9"
+          />やると決めたことは必ずやる姿勢</label
+        >
+      </div>
+
+      <div class="question-group">
+        <h2>「あ、これ苦手だな」と思う瞬間は？</h2>
+        <label
+          ><input
+            type="radio"
+            name="q10"
+            value="A10"
+          />急に注目を集めるとき</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="q10"
+            value="B10"
+          />感情や勢いだけで動く空気</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="q10"
+            value="C10"
+          />ルールが多くて自由がないとき</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="q10"
+            value="D10"
+          />人の顔色を読み続けないといけないとき</label
+        >
+      </div>
+
+      <div class="question-group">
+        <h2>あなたの「地雷ワード」になりそうなのは？</h2>
+        <label
+          ><input
+            type="radio"
+            name="q11"
+            value="A11"
+          />「で、何がしたいの？」</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="q11"
+            value="B11"
+          />「ちゃんとしてよ」</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="q11"
+            value="C11"
+          />「考えすぎじゃない？」</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="q11"
+            value="D11"
+          />「みんなやってるから」</label
+        >
+      </div>
+
+      <div class="question-group">
+        <h2>次のうち、あなたが言われて一番うれしい言葉は？</h2>
+        <label
+          ><input
+            type="radio"
+            name="q12"
+            value="A12"
+          />「一緒にいると元気出る！」</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="q12"
+            value="B12"
+          />「ほんとに面白い発想するね」</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="q12"
+            value="C12"
+          />「あなたがいると安心する」</label
+        >
+        <label
+          ><input
+            type="radio"
+            name="q12"
+            value="D12"
+          />「やっぱり違うね！なんかすごいわ〜」</label
+        >
+      </div>
+
+      <input type="submit" value="送信" />
+    </form>
+
+    <div id="status"></div>
+    <script>
+      document
+        .getElementById("myForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const data = {};
+          data.nickname = document.getElementById("nick-name").value;
+
+          for (let i = 1; i <= 12; i++) {
+            const selected = document.querySelector(
+              `input[name="q${i}"]:checked`
+            );
+            // チェックされてないことはありえないかな
+            data[`q${i}`] = {
+              value: selected.value, // 計算用
+              text: selected.parentNode.textContent.trim(), //　スプシ用
+            };
+          }
+
+          google.script.run
+            .withSuccessHandler(function (url) {
+              document.getElementById("status").innerHTML = url
+                ? `<p>診断結果はこちら <a href ="${url}" target="_blank">${url}</a></p>`
+                : "診断結果を取得できませんでした。";
+            })
+            .withFailureHandler(function (err) {
+              document.getElementById("status").innerText =
+                "送信中にエラーが発生しました: " + err.message;
+            })
+            .handleFormSubmit(data);
+        });
+    </script>
+  </body>
+</html>
